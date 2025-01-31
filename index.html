@@ -23,6 +23,7 @@
         extend: {
           colors: {
             clifford: '#da373d',
+            'btn-color': 'rgba(23, 152, 0, 1)',
           }
         }
       }
@@ -31,9 +32,57 @@
 </head>
 
 <body class="sora-font">
-  <header>
-    <h2>rifat
-    </h2>
+  <header class="bg-gradient-to-t from-orange-100 to-white">
+    <nav class="mt-4 md:container mx-auto">
+      <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <img class="w-28" src="./images/headerlogo.png" alt="">
+
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a>Product</a></li>
+            <li><a>Services</a></li>
+            <li><a>Contact us</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end max-sm:hidden">
+          <i class="fa-solid fa-magnifying-glass mr-6 text-2xl hover:text-emerald-400"></i>
+          <i class="fa-solid fa-cart-shopping mr-6 text-2xl"></i>
+          <button class="border border-green-500 px-7 py-2 mr-2 rounded-lg hover:bg-emerald-100">Login</button>
+          <a class="bg-btn-color px-7 py-[10px] text-white rounded-lg hover:bg-emerald-700">Button</a>
+        </div>
+
+        <!-- <div class="sm:hidden navbar-end text-3xl text-btn-color">
+          <i class="fa-solid fa-bars"></i>
+        </div> -->
+
+        <div class="dropdown sm:hidden navbar-end flex justify-end relative">
+          <div tabindex="0">
+            <i class="fa-solid fa-bars text-4xl text-btn-color"></i>
+          </div>
+          <ul tabindex="0"
+            class=" absolute top-8 dropdown-content bg-gray-100 rounded-lg z-[1] mt-3 w-32 p-2 shadow space-y-2">
+            <li><a class="hover:text-emerald-400">Product</a></li>
+            <li><a class="hover:text-emerald-400">Services</a></li>
+            <li><a class="hover:text-emerald-400">Contact us</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="sm:hidden border border-b-[1px] border-green-600"></div>
+    </nav>
+    <section class="grid grid-cols-1 mt-8 lg:mt-16 ">
+      <div class="text-center">
+        <h1 class="text-4xl font-semibold">Freshness <span class="text-btn-color">You Can
+            <br> Count</span> On, Prices You’ll Love!</h1>
+        <p class="mt-4 lg:mt-8 w-auto ">Shop your daily essentials at unbeatable prices. From fresh produce to pantry <br> staples,
+          we’ve got you covered
+          every day!</p>
+      </div>
+      <div class="mx-auto mt-4 lg:mt-8">
+        <img class="lg:w-[990px]" src="./images/vegetables.png" alt="">
+      </div>
+    </section>
   </header>
 
   <main></main>
